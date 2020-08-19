@@ -9,8 +9,9 @@
 </head>
 <body background="https://en.fujirockfestival.com/2020/wp-content/uploads/2020/06/en_1_sns_0617.jpg"></body>
 
+<div class="logo"> </div>
 <div id="player"></div>
-
+<div class="text"> <img src="./image/pic.png"></div>
 <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
 
@@ -96,20 +97,41 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-
 #player {
   text-align: center;
 	background-color: #fff;
-	border-radius: 20px;
-	width: 1280px;
-	height: 720px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	width: 64%;
+	height: 36vw;
 }
 /* Sections
    ========================================================================== */
+
+/**
+* logo
+*/
+.logo {
+  width: 40vw;
+  margin-top: 16px;
+  height: 100px;
+  /* background-color: black; */
+  background-image: url(./image/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**
+* pic-text
+*/
+.text {
+  width: 32vw;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* height: 65vh;
+  background-color: black; */
+}
 
 /**
  * Remove the margin in all browsers.
@@ -117,6 +139,9 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /**
